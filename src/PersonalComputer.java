@@ -13,11 +13,12 @@ public class PersonalComputer extends Product {
     }
 
     private void drawLogo() {
-        monitor.drawPixelAt(120, 50, "Yellow");
+        monitor.drawPixelAt(1200, 50, "Yellow");
     }
 
     public void powerUp(){
-        comp
+        computerCase.pressPowerButton();
+        drawLogo();
     }
 //    public ComputerCase getComputerCase() {
 //        return computerCase;
